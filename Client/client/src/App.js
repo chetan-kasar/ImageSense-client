@@ -48,7 +48,7 @@ const App = () => {
     <div>
       <h1>ImageSense</h1>
       <div className="input-window">
-        <img src={dispImage} height={100} width={100} className='img'/>
+       <img src={dispImage} height={100} width={100} className='img' alt=""/>
         <input text="text" placeholder='Message ImageSense......' onChange={(e)=>{setPrompt(e.target.value)}} className='prompt'/>
         <div className="file-input ">
           <input type="file" accept="image/*" onChange={imageSelected} id="file" className="file" style={inputStyle}/>
