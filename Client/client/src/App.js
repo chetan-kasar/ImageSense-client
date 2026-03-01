@@ -65,7 +65,9 @@ const App = () => {
       </div>
       <div class="output">
         <p class="output-heading">Output : </p>
-        <p class="output-txt">{loding? <Loading/>: output}</p>
+        <div class="output-txt">
+          {loding ? <Loading/> : <ReactMarkdown>{output}</ReactMarkdown>}
+        </div>
         <p className="error-txt">{error? "Server is Busy Now :( Please Try Again":""}</p>
       </div>
 
